@@ -1,0 +1,5 @@
+node_modules/
+dev-config.json
+/*.log
+coverage/
+lib/
