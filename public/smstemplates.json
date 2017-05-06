@@ -1,0 +1,65 @@
+{
+  "monday": {
+    "initial": "Hello! :: do :: at :: at :: ok?",
+    "planning_yes": "YEAH!",
+    "planning_no": "Nah...",
+    "planning_no_final": "No no no",
+    "completion_check": "HI :: Did you do :: at :: at :: ok?",
+    "response_yes": "Nice one!",
+    "response_no": "Next time?"
+  },
+   "tuesday": {
+    "initial": "Hello! :: do :: at :: at :: ok?",
+    "planning_yes": "YEAH!",
+    "planning_no": "Nah...",
+    "planning_no_final": "No no no",
+    "completion_check": "HI :: Did you do :: at :: at :: ok?",
+    "response_yes": "Nice one!",
+    "response_no": "Next time?"
+  },
+   "wednesday": {
+    "initial": "Hello! :: do :: at :: at :: ok?",
+    "planning_yes": "YEAH!",
+    "planning_no": "Nah...",
+    "planning_no_final": "No no no",
+    "completion_check": "HI :: Did you do :: at :: at :: ok?",
+    "response_yes": "Nice one!",
+    "response_no": "Next time?"
+  },
+   "thursday": {
+    "initial": "Hello! :: do :: at :: at :: ok?",
+    "planning_yes": "YEAH!",
+    "planning_no": "Nah...",
+    "planning_no_final": "No no no",
+    "completion_check": "HI :: Did you do :: at :: at :: ok?",
+    "response_yes": "Nice one!",
+    "response_no": "Next time?"
+  },
+   "friday": {
+    "initial": "Hello! :: do :: at :: at :: ok?",
+    "planning_yes": "YEAH!",
+    "planning_no": "Nah...",
+    "planning_no_final": "No no no",
+    "completion_check": "HI :: Did you do :: at :: at :: ok?",
+    "response_yes": "Nice one!",
+    "response_no": "Next time?"
+  },
+   "saturday": {
+    "initial": "Hello! :: do :: at :: at :: ok?",
+    "planning_yes": "YEAH!",
+    "planning_no": "Nah...",
+    "planning_no_final": "No no no",
+    "completion_check": "HI :: Did you do :: at :: at :: ok?",
+    "response_yes": "Nice one!",
+    "response_no": "Next time?"
+  },
+   "sunday": {
+    "initial": "Hello! :: do :: at :: at :: ok?",
+    "planning_yes": "YEAH!",
+    "planning_no": "Nah...",
+    "planning_no_final": "No no no",
+    "completion_check": "HI :: Did you do :: at :: at :: ok?",
+    "response_yes": "Nice one!",
+    "response_no": "Next time?"
+  }
+}
