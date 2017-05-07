@@ -1,5 +1,14 @@
-{
-  "monday": {
+[
+  {
+    "initial": "Hello! :: are you planning to do :: at :: at ::? Respond with: Yes / No",
+    "planning_yes": "That's The spirit!!",
+    "planning_no": "No problem! Do you intend to do it at different time today? Respond with: Yes / Not",
+    "planning_no_final": "Got it! Let's see if you can get back on track tomorrow.",
+    "completion_check": "Evening :: Did you do :: at :: at ::?",
+    "response_yes": "Great! You have earned 1 point!",
+    "response_no": "See if you can catch up. Tips: (link)"
+  },
+   {
     "initial": "Hello! :: do :: at :: at :: ok?",
     "planning_yes": "YEAH!",
     "planning_no": "Nah...",
@@ -8,7 +17,7 @@
     "response_yes": "Nice one!",
     "response_no": "Next time?"
   },
-   "tuesday": {
+   {
     "initial": "Hello! :: do :: at :: at :: ok?",
     "planning_yes": "YEAH!",
     "planning_no": "Nah...",
@@ -17,7 +26,7 @@
     "response_yes": "Nice one!",
     "response_no": "Next time?"
   },
-   "wednesday": {
+   {
     "initial": "Hello! :: do :: at :: at :: ok?",
     "planning_yes": "YEAH!",
     "planning_no": "Nah...",
@@ -26,7 +35,7 @@
     "response_yes": "Nice one!",
     "response_no": "Next time?"
   },
-   "thursday": {
+  {
     "initial": "Hello! :: do :: at :: at :: ok?",
     "planning_yes": "YEAH!",
     "planning_no": "Nah...",
@@ -35,7 +44,7 @@
     "response_yes": "Nice one!",
     "response_no": "Next time?"
   },
-   "friday": {
+  {
     "initial": "Hello! :: do :: at :: at :: ok?",
     "planning_yes": "YEAH!",
     "planning_no": "Nah...",
@@ -44,22 +53,13 @@
     "response_yes": "Nice one!",
     "response_no": "Next time?"
   },
-   "saturday": {
-    "initial": "Hello! :: do :: at :: at :: ok?",
+  {
+    "initial": "Hello! :: are you planning to do :: at :: at ::?",
     "planning_yes": "YEAH!",
     "planning_no": "Nah...",
     "planning_no_final": "No no no",
-    "completion_check": "HI :: Did you do :: at :: at :: ok?",
-    "response_yes": "Nice one!",
-    "response_no": "Next time?"
-  },
-   "sunday": {
-    "initial": "Hello! :: do :: at :: at :: ok?",
-    "planning_yes": "YEAH!",
-    "planning_no": "Nah...",
-    "planning_no_final": "No no no",
-    "completion_check": "HI :: Did you do :: at :: at :: ok?",
+    "completion_check": "Evening :: Did you do :: at :: at ::?",
     "response_yes": "Nice one!",
     "response_no": "Next time?"
   }
-}
+]

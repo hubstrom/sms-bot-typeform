@@ -2,11 +2,10 @@
 // Server wrapper
 
 import express from 'express'
-import twilio from 'twilio'
 import bodyParser from 'body-parser'
 
 import './modules/typeform'
-import { twilioResponse } from './modules/twilio.js'
+import { twilioResponse } from './modules/twilio'
 
 const app = express()
 
