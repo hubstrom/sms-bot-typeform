@@ -4,15 +4,14 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 
-import './modules/typeform'
-import { twilioResponse } from './modules/twilio'
+import { onResponse } from '../badExamples/simpleTwilioSend.js'
 
 const app = express()
 
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.post('/twilio-webhook', (req, res) => {
-  twilioResponse(req.body)
+  onResponse(req.body.Body, req.body.From)
 })
 
 // catch 404 and forward to error handler

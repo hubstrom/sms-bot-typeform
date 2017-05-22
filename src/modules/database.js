@@ -9,8 +9,6 @@ import texts from '../../public/smstemplates.json'
 const writer = csvWriter()
 const writerLeader = csvWriter()
 
-checkMorningNo('+37064445377', '0')
-
 export function checkMorningNo (number, weekday) {
   fs.createReadStream('./logs.csv')
     .pipe(csv.parse({delimiter: ','}, (err, data) => {
@@ -29,7 +27,7 @@ export function checkMorningNo (number, weekday) {
         writeLogs.no(number)
       }
     }))
-} 
+}
 
 writer.pipe(fs.createWriteStream('logs.csv', { flags: 'a' }))
 writerLeader.pipe(fs.createWriteStream('logsLeader.csv', { flags: 'a' }))
