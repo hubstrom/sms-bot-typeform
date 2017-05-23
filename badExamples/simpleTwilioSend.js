@@ -26,11 +26,14 @@ function sendTwilio(text: String, number: String) {
 //sendTwilio("Good morning", '+37064445377')
 
 function mondayText (username, activity, time, location) {
-  return `Happy Monday, ${username}! Welcome to your first day of the Get Motivated Buddy Weekly Challenge beta test. To leave feedback at any time please go here: https://goo.gl/VIddRT. This first text is simply for you to recommit to your intention. Ready? Here we go: All set to ${activity} at ${time} at ${location} today? Please respond Yes or No.`
+  return `Buenos Dias ${username}, It is Tuesday. Otherwise known as the Day After Monday.
+Ready to ${activity} at ${time} at ${location} today?
+Please respond Yes or No.`
 }
 
 function mondayEveningText (username, activity, time, location) {
-  return `Bonsoir ${username}, it’s your first check in to see if you followed through! Did you do ${activity} at ${time} at ${location} today?
+  return `Tuesday is not what it used to be, am I right? 
+Did you ${activity} at ${time} at ${location} today?
 Please respond Yes or No.`
 }
 
@@ -57,15 +60,15 @@ const hours = timeTest.getHours()
 
 
 function getNeededUsers (timeEST, timePST) {
-  pool.query(`select username, first_name, last_name, timezone, phone_number, monday_activity, monday_time, monday_place from user_activities inner join users on user_activities.user_id = users.id where monday_time ilike '${timeEST}' and timezone = 'EST' or monday_time ilike '${timePST}' and timezone = 'PST'`, (err, res) => {
+  pool.query(`select username, first_name, last_name, timezone, phone_number, tuesday_activity, tuesday_time, tuesday_place from user_activities inner join users on user_activities.user_id = users.id where tuesday_time ilike '${timeEST}' and timezone = 'EST' or tuesday_time ilike '${timePST}' and timezone = 'PST'`, (err, res) => {
   if(err) {
     return console.error('error running query', err)
   }
     for (let i = 0; i < res.rows.length; i += 1) {
-      const texts = mondayText(res.rows[i].username, res.rows[i].monday_activity, res.rows[i].monday_time, res.rows[i].monday_place)
+      const texts = mondayText(res.rows[i].username, res.rows[i].tuesday_activity, res.rows[i].tuesday_time, res.rows[i].tuesday_place)
       const phone = '+1' + res.rows[i].phone_number
       sendTwilio(texts, phone)
-      console.log(res.rows[i].username + ' ' + res.rows[i].monday_time)
+      console.log(res.rows[i].username + ' ' + res.rows[i].tuesday_time)
     }
 })
 }
@@ -153,15 +156,15 @@ morningJob.start()
 // getNeededUsers('6:00am', '3:00am')
 
 function askEveningQuestion (timeEST, timePST) {
-  pool.query(`select username, first_name, last_name, timezone, phone_number, monday_activity, monday_time, monday_place from user_activities inner join users on user_activities.user_id = users.id where monday_time ilike '${timeEST}' and timezone = 'EST' or monday_time ilike '${timePST}' and timezone = 'PST'`, (err, res) => {
+  pool.query(`select username, first_name, last_name, timezone, phone_number, tuesday_activity, tuesday_time, tuesday_place from user_activities inner join users on user_activities.user_id = users.id where tuesday_time ilike '${timeEST}' and timezone = 'EST' or tuesday_time ilike '${timePST}' and timezone = 'PST'`, (err, res) => {
     if(err) {
       return console.error('error running query', err)
     }
     for (let i = 0; i < res.rows.length; i += 1) {
-      const texts = mondayEveningText(res.rows[i].username, res.rows[i].monday_activity, res.rows[i].monday_time, res.rows[i].monday_place)
+      const texts = mondayEveningText(res.rows[i].username, res.rows[i].tuesday_activity, res.rows[i].tuesday_time, res.rows[i].tuesday_place)
       const phone = '+1' + res.rows[i].phone_number
       sendTwilio(texts, phone)
-      console.log(res.rows[i].username + ' ' + res.rows[i].monday_time)
+      console.log(res.rows[i].username + ' ' + res.rows[i].tuesday_time)
     }
   })
 }
@@ -173,7 +176,7 @@ const textYes = {
 
 const textNo = {
   morning: 'No problem. Do you still intend to do it today at a different time or location? Please Respond Yes or No.',
-  morningFinal: 'Alright, I’ll be in touch tomorrow, have a great day! Click for tips: https://goo.gl/VIddRT',
+  morningFinal: 'Alright, I will be in touch tomorrow, have a great day! Click for tips: https://goo.gl/VIddRT',
   evening: 'You still get points for checking in! See if you can catch up tomorrow. Need helpful tips? Click here: https://goo.gl/PDQxxZ Leaderboard:  https://goo.gl/VIddRT'
 }
 
@@ -196,14 +199,14 @@ function checkIfWasNo (number) {
 
 
 function checkIfAfterActivity (number, booleanCase) {
-  pool.query(`select monday_time, phone_number, timezone from user_activities inner join users on user_activities.user_id = users.id`, (err, res) => {
+  pool.query(`select tuesday_time, phone_number, timezone from user_activities inner join users on user_activities.user_id = users.id`, (err, res) => {
     if (err) {
       return console.error('error running query', err)
     }
     for (let i = 1; i < res.rows.length; i += 1) {
       const checkingNumber = '+1' + res.rows[i].phone_number
       if (checkingNumber === number) {
-        const timeSplit = parseInt(res.rows[i].monday_time.split('::'), 10)
+        const timeSplit = parseInt(res.rows[i].tuesday_time.split('::'), 10)
         let currentHour = 0
         if (res.rows[i].timezone === 'PST') {
           currentHour = moment.utc().format('H') - 7

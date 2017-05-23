@@ -1,0 +1,195 @@
+yarn start v0.24.4
+$ yarn dev:start 
+yarn dev:start v0.24.4
+$ nodemon --ignore lib --exec babel-node src/server 
+[33m[nodemon] 1.11.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node src/server`[39m
+events.js:163
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+error Command failed with exit code 1.
+error Command failed with exit code 1.
+EST: 8%%pm, PST: 5%%pm
+EST: 3%%pm, PST: 12%%pm
+BenRosen 5:00pm
+EST: -3%%am, PST: 6%%pm
+EST: -8%%am, PST: 1%%pm
+The psychologist 6:00pm
+Eurotrash 1:00pm
+Planeidon 1:00pm
+error running query { error: operator does not exist: text = bigint
+    at Connection.parseE (/home/frank/sms-bot-typeform/node_modules/pg/lib/connection.js:569:11)
+    at Connection.parseMessage (/home/frank/sms-bot-typeform/node_modules/pg/lib/connection.js:396:17)
+    at TLSSocket.<anonymous> (/home/frank/sms-bot-typeform/node_modules/pg/lib/connection.js:132:22)
+    at emitOne (events.js:96:13)
+    at TLSSocket.emit (events.js:191:7)
+    at readableAddChunk (_stream_readable.js:178:18)
+    at TLSSocket.Readable.push (_stream_readable.js:136:10)
+    at TLSWrap.onread (net.js:559:20)
+  name: 'error',
+  length: 200,
+  severity: 'ERROR',
+  code: '42883',
+  detail: undefined,
+  hint: 'No operator matches the given name and argument type(s). You might need to add explicit type casts.',
+  position: '55',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_oper.c',
+  line: '726',
+  routine: 'op_error' }
+EST: -2%%am, PST: 7%%pm
+EST: -7%%am, PST: 2%%pm
+Super dad 7:00pm
+EST: -1%%am, PST: 8%%pm
+EST: -6%%am, PST: 3%%pm
+Lex123 3:00pm
+EST: 0%%am, PST: 9%%pm
+EST: -5%%am, PST: 4%%pm
+Preston24 4:00pm
+EST: 1%%am, PST: 10%%pm
+EST: -4%%am, PST: 5%%pm
+BenRosen 5:00pm
+error running query { error: operator does not exist: text = bigint
+    at Connection.parseE (/home/frank/sms-bot-typeform/node_modules/pg/lib/connection.js:569:11)
+    at Connection.parseMessage (/home/frank/sms-bot-typeform/node_modules/pg/lib/connection.js:396:17)
+    at TLSSocket.<anonymous> (/home/frank/sms-bot-typeform/node_modules/pg/lib/connection.js:132:22)
+    at emitOne (events.js:96:13)
+    at TLSSocket.emit (events.js:191:7)
+    at readableAddChunk (_stream_readable.js:178:18)
+    at TLSSocket.Readable.push (_stream_readable.js:136:10)
+    at TLSWrap.onread (net.js:559:20)
+  name: 'error',
+  length: 200,
+  severity: 'ERROR',
+  code: '42883',
+  detail: undefined,
+  hint: 'No operator matches the given name and argument type(s). You might need to add explicit type casts.',
+  position: '55',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_oper.c',
+  line: '726',
+  routine: 'op_error' }
+EST: 2%%am, PST: 11%%pm
+EST: -3%%am, PST: 6%%pm
+The psychologist 6:00pm
+EST: 3%%am, PST: 0%%am
+EST: -2%%am, PST: 7%%pm
+Super dad 7:00pm
+EST: 4%%am, PST: 1%%am
+EST: -1%%am, PST: 8%%pm
+CriminalPsych 11:00am
+cipher021 10:00am
+BryanC 10:30am
+Asclepius 11:00am
+EST: 5%%am, PST: 2%%am
+EST: 0%%am, PST: 9%%pm
+EST: 6%%am, PST: 3%%am
+EST: 1%%am, PST: 10%%pm
+Needtostudy 6:00am
+ChickenJr 6:00am
+EST: 7%%am, PST: 4%%am
+EST: 2%%am, PST: 11%%pm
+Niloufer  7:30am
+yarn start v0.24.4
+$ yarn dev:start 
+yarn dev:start v0.24.4
+$ nodemon --ignore lib --exec babel-node src/server 
+[33m[nodemon] 1.11.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `babel-node src/server`[39m
+events.js:163
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+error Command failed with exit code 1.
+error Command failed with exit code 1.
+EST: 8%%am, PST: 5%%am
+EST: 3%%am, PST: 0%%am
+EST: 9%%am, PST: 6%%am
+EST: 4%%am, PST: 1%%am
+Farooq 6:00am
+CriminalPsych 10:00am
+hamishbrock 11:00am
+Grazerface 10:00am
+cipher021 10:00am
+BryanC 10:30am
+EST: 10%%am, PST: 7%%am
+EST: 5%%am, PST: 2%%am
+EST: 11%%am, PST: 8%%am
+EST: 6%%am, PST: 3%%am
+The psychologist 8:00am
+Needtostudy 6:00am
+ChickenJr 6:00am
+EST: 12%%pm, PST: 9%%am
+EST: 7%%am, PST: 4%%am
+Mars0817 9:00am
+Niloufer  7:30am
+EST: 1%%pm, PST: 10%%am
+EST: 8%%am, PST: 5%%am
+CriminalPsych 10:00am
+Grazerface 10:00am
+cipher021 10:00am
+BryanC 10:30am
+EST: 2%%pm, PST: 11%%am
+EST: 9%%am, PST: 6%%am
+hamishbrock 11:00am
+Farooq 6:00am
+error running query { error: operator does not exist: text = bigint
+    at Connection.parseE (/home/frank/sms-bot-typeform/node_modules/pg/lib/connection.js:569:11)
+    at Connection.parseMessage (/home/frank/sms-bot-typeform/node_modules/pg/lib/connection.js:396:17)
+    at TLSSocket.<anonymous> (/home/frank/sms-bot-typeform/node_modules/pg/lib/connection.js:132:22)
+    at emitOne (events.js:96:13)
+    at TLSSocket.emit (events.js:191:7)
+    at readableAddChunk (_stream_readable.js:178:18)
+    at TLSSocket.Readable.push (_stream_readable.js:136:10)
+    at TLSWrap.onread (net.js:559:20)
+  name: 'error',
+  length: 200,
+  severity: 'ERROR',
+  code: '42883',
+  detail: undefined,
+  hint: 'No operator matches the given name and argument type(s). You might need to add explicit type casts.',
+  position: '55',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_oper.c',
+  line: '726',
+  routine: 'op_error' }
+EST: 3%%pm, PST: 12%%pm
+EST: 10%%am, PST: 7%%am
+EST: 4%%pm, PST: 1%%pm
+EST: 11%%am, PST: 8%%am
+Eurotrash 1:00pm
+Femurlemur 10:30pm
+Asclepius 1:00pm
+The psychologist 8:00am
+EST: 5%%pm, PST: 2%%pm
+EST: 12%%pm, PST: 9%%am
+Lex123 2:00pm
+Mars0817 9:00am
