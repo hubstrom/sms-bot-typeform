@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  -if (success)
+    section.success
+      h2 Welcome to Frank Face
+    section.menu
+      a(href='/funnel')
+        h4
+          | Funnel
+        br
+      a(href='/tasks')
+        h4
+          | Tasks
+        br
+      a(href='/documentation')
+        h4
+          | Dropbyke Documentation
+        br
+  -else
+    -if (errors)
+      section.errors
+        each item in errors
+          li= item.msg
+    form(action='/submit', method='post')
+      .input
+        label(for='username') Username
+        input#username(type='text', name='username')
+      .input
+        label(for='password') Password
+        input#password(type='password', name='password')
+      button(type='submit') Login

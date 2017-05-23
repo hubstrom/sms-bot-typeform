@@ -1,0 +1,28 @@
+{
+    "botToken": "364917050:AAGwLAJ1L4_I0SovspDGPqzCFiH-9lAqnA0",
+    "botTokenTest": "330719078:AAFlt_caON_fBJHuna7z5074GWoiwkkY3Ys",
+    "connectionString": "postgres://frank:franky16@frank-db.cnclrohkwsvd.us-east-1.rds.amazonaws.com/frankdb",
+    "connectionConfig": {
+      "user": "frank",
+      "database": "frankdb",
+      "password": "franky16",
+      "host": "frank-db.cnclrohkwsvd.us-east-1.rds.amazonaws.com",
+      "port": 5432,
+      "max": 10,
+      "idleTimeoutMillis": 30000
+    },
+    "connectionConfigDropbyke": {
+      "user": "report",
+      "database": "dropbyke",
+      "password": "enterprydropbyketree",
+      "host": "api.dropbyke.com",
+      "port": 5432,
+      "max": 10,
+      "idleTimeoutMillis": 30000,
+      "ssl": true
+    },
+    "watson" : {
+      "username" : "70a9c091-735c-4726-8064-21358aee2173",
+      "password" : "snDPaX5CUz3w"
+    }
+}

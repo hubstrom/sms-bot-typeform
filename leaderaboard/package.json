@@ -1,0 +1,32 @@
+{
+  "name": "frank-face",
+  "version": "0.3.2",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "connect-pg-simple": "^3.1.2",
+    "cookie-parser": "~1.4.3",
+    "cookie-session": "^2.0.0-alpha.2",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "express-session": "^1.14.2",
+    "express-validator": "^3.0.0",
+    "googleapis": "^16.0.0",
+    "morgan": "~1.7.0",
+    "newrelic": "^1.35.1",
+    "node-geocoder": "^3.15.1",
+    "node-telegram-bot-api": "^0.27.0",
+    "passport": "^0.3.2",
+    "passport-google-oauth": "^1.0.0",
+    "pg": "6.1.0",
+    "pug": "^2.0.0-beta6",
+    "request": "^2.79.0",
+    "serve-favicon": "~2.3.0",
+    "slackbots": "^0.5.3",
+    "twilio": "^2.11.1",
+    "watson-developer-cloud": "^2.21.1"
+  }
+}

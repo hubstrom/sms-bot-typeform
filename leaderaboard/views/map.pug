@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  script.
+    var items = [!{items}];
+    function initMap() {
+      var myLatLng = {lat: 41.3921414, lng: 2.173881};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 13,
+        center: myLatLng
+      });
+        items.forEach(function(doc, err) {
+          var contentString = '<h6 class="id">' + doc.name + '</h6><br>' + 'Stopped at: <br>' + timeConverter(doc.ride_status_update_time) + '<br>'+ '<b>Lock pass: ' + doc.lock_password + '</b><br><button id="done-button"><b>DONE</b></button>';
+          var infowindow = new google.maps.InfoWindow({
+            content: contentString
+          });
+          var marker = new google.maps.Marker({position: {lat: doc.st_y, lng: doc.st_x}, map: map, animation: google.maps.Animation.DROP}).addListener('click', function() {
+            infowindow.open(map, new google.maps.Marker({position: {lat: doc.st_y, lng: doc.st_x}, map: map}));
+          });
+          });
+      };
+  #map
+  script(async, defer, src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA6nsbftPa1AmJEBXEJS3muZDNjOn-NwNg&callback=initMap')
